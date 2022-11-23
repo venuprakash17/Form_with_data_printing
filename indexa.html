@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        table {
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: 16px;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .trash-icon {
+            font-size: 20px;
+            color: red;
+            background-color: white;
+            border: 1px solid red;
+            border-radius: 4px;
+            cursor: pointer;
+            transition-property: background-color, color;
+            transition-duration: 1.25s;
+        }
+
+        .trash-icon:hover {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>FORM VAIDATION</h2>
+    <form action="">
+        <!-- adding vendor name  -->
+        <label for=""> <b> Vendor name: </b> </label>
+        <input type="text" name="vendor-name" id="vendor-name" placeholder="vendor name"> <br><br>
+        <!-- adding email -->
+        <label for=""> <b> Email: </b> </label>
+        <input type="email" name="email-id" id="email-id" placeholder="Email"><br><br>
+        <!-- adding mobile number -->
+        <label for=""> <b> Mobile Number: </b></label>
+        <input type="email" name="mobile-number" id="mobile-number" placeholder="Mobile"><br><br>
+
+        <!-- adding payment type -->
+        <label for=""> <b>Payment Type : </b> </label>
+        <input type="radio" name="NetBanking" id="NetBanking"> <label for="">NetBanking</label>
+        <input type="radio" name="UPI" id="UPI"> <label for="">UPI</label>
+        <input type="radio" name="Card" id="Card"> <label for="">Card</label> <br><br>
+        <!-- adding the last date -->
+        <label for=""> <b> Last date: </b></label>
+        <input type="date" name="last-date" id="last-date" placeholder="Last Date"><br><br>
+
+        <!-- adding the Due date -->
+        <label for=""> <b> Due date: </b></label>
+        <input type="date" name="due-date" id="due-date" placeholder="Due Date"><br><br>
+
+        <!--  -->
+        <label for=""> <b> Due Charges: </b></label>
+        <input type="test" name="due-charges" id="due-charges" placeholder="due charges"><br><br>
+
+
+        <!-- adding the Suspention date -->
+        <label for=""> <b> Suspention date: </b></label>
+        <input type="date" name="suspention-date" id="suspention-date" placeholder="suspention-date"><br><br>
+
+        <!-- adding Current status -->
+
+        <label for=""> <b>Current status : </b> </label>
+        <input type="radio" name="paid" id="paid"> <label for="">Paid</label>
+        <input type="radio" name="unpaid" id="unpaid"> <label for="">unpaid</label> <br><br>
+        <!-- Adding any last Due -->
+        <label for=""> <b> Any last Due: </b></label>
+        <input type="text" name="AnyLastDue" id="AnyLastDue" placeholder="AnyLastDue"><br><br>
+
+        <button type="submit" id="saveform">Submi</button> <br><br>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th width="4%">Sr No</th>
+                <th width="10%">Vendor Name</th>
+                <th width="10%">Email ID</th>
+                <th width="10%">Mobile Number</th>
+                <th width="10%">Payment type</th>
+                <th width="10%">Last Date</th>
+                <th width="10%">Due Date</th>
+                <th width="10%">Due Charges</th>
+                <th width="10%">Suspention Date</th>
+                <th width="10%">current status</th>
+                <th width="10%">AnyLastDue</th>
+                <th width="10%">Delete</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <!-- <tr>
+                <td>1</td>
+                <td>BB</td>
+                <td>male</td>
+            </tr> -->
+        </tbody>
+    </table>
+    <script src="indexa.js"></script>
+</body>
+
+</html>
